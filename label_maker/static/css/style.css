@@ -1,0 +1,21 @@
+@page {
+    width: 25mm;
+    height: 18mm;
+    padding: 18mm;
+}
+img {
+    height: 15mm;
+    display: inline-block;
+    vertical-align: middle;
+    image-rendering: crisp-edges;
+}
+element.style {
+    margin-left: -.75pt;
+    /* border-collapse: collapse; */
+    /* border: none; */
+    mso-padding-top-alt: 0in;
+    mso-padding-bottom-alt: 0in;
+    mso-border-insideh: none;
+    mso-border-insidev: none;
+    padding-left: 25px;
+}

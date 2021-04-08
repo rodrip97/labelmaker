@@ -1,0 +1,92 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>labels</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.55in .3in 3in .55in;
+	mso-header-margin:.1in;
+	mso-footer-margin:.12in;
+	mso-paper-source:4;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+    </style>
+    <xml>
+        <o:shapedefaults v:ext="edit" spidmax="1026"/>
+    </xml><![endif]--><!--[if gte mso 9]>
+    <xml>
+        <o:shapelayout v:ext="edit">
+            <o:idmap v:ext="edit" data="1"/>
+        </o:shapelayout>
+    </xml><![endif]-->
+</head>
+<link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}"/>
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+       style='margin-left:-.75pt;border-collapse:collapse;border:none;mso-padding-top-alt: 0in;mso-padding-bottom-alt:0in;mso-border-insideh:none;mso-border-insidev: none'>
+
+    {% for item in list_qr_images %}
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;page-break-inside:avoid; height:47.5pt'>
+            <img src="/static/inc.png" align="center" style=" padding-left: 30px; padding-right: 3px; padding-bottom: 20px; padding-top: 20px;">
+            <img src="static/images/0'qr.jpg" align="center" style=" padding-left: 3px; padding-right: 30px; padding-bottom: 20px; padding-top: 20px;">
+    </tr>
+    {% endfor %}
+
+</table>
+</br>
+</html>
