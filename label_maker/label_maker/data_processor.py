@@ -18,7 +18,21 @@ def qr_maker():
     return list_images
 
 
+def sid_finder():
+
+    dirpath = os.path.dirname(os.path.abspath(__file__))
+    siddata = pd.read_excel(os.path.join(dirpath, "nodes.xlsx"), engine='openpyxl')
+    return siddata['SID'].values.tolist()
+
+
 if __name__ == '__main__':
     list_items = qr_maker()
     for i in list_items:
         print(i)
+
+    list_sid = sid_finder()
+    for nr in list_sid:
+        print(nr)
+
+
+

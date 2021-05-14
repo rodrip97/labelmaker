@@ -6,7 +6,7 @@
 img {
     height: 15mm;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: left;
     image-rendering: crisp-edges;
 }
 element.style {

@@ -77,15 +77,16 @@ div.WordSection1
     </xml><![endif]-->
 </head>
 <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}"/>
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
-       style='margin-left:-.75pt;border-collapse:collapse;border:none;mso-padding-top-alt: 0in;mso-padding-bottom-alt:0in;mso-border-insideh:none;mso-border-insidev: none'>
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='margin-left:-75pt;border-collapse:collapse;border:none;mso-padding-top-alt: 0in;mso-padding-bottom-alt:0in;mso-border-insideh:none;mso-border-insidev: none'>
 
     {% for item in list_qr_images %}
-    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;page-break-inside:avoid; height:47.5pt'>
-            <img src="/static/inc.png" align="center" style=" padding-left: 30px; padding-right: 3px; padding-bottom: 20px; padding-top: 20px;">
-            <img src="static/images/0'qr.jpg" align="center" style=" padding-left: 3px; padding-right: 30px; padding-bottom: 20px; padding-top: 20px;">
+
+    <tr>
+            <img src="static/images/0'qr.jpg" align="center" style=" padding-left: 15px; padding-right: 10px; padding-bottom: 20px; padding-top: 20px;">
+            <small style="padding-right: 20px;"></small>
     </tr>
     {% endfor %}
+
 
 </table>
 </br>
